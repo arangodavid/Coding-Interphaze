@@ -1,5 +1,5 @@
-# PhoenixDev
-Phoenix Website
+# Coding-Interphaze
+Coding-Interphaze
 
 Install Sass 
 1. Go to desired project directory
