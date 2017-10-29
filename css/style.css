@@ -1,4 +1,29 @@
+html {
+  font-size: 15px; }
+
 body {
   border: 1px solid black; }
+  body .root {
+    border: 1px solid #000000; }
+
+.site_header {
+  border: 1px solid #000000;
+  height: 20rem; }
+
+.section_one {
+  border: 1px solid #000000;
+  height: 20rem; }
+
+.section_two {
+  border: 1px solid #000000;
+  height: 20rem; }
+
+.section_three {
+  border: 1px solid #000000;
+  height: 20rem; }
+
+.site_footer {
+  border: 1px solid #000000;
+  height: 20rem; }
 
 /*# sourceMappingURL=style.css.map */
