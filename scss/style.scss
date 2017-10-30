@@ -1,3 +1,83 @@
-body{
-	border: 1px solid black;
+@import url('https://fonts.googleapis.com/css?family=Roboto'); //roboto google font.
+
+/******* variables ********/
+
+$midnight-blue: #2C3E50;
+$wet-asphalt: #34495e;
+$white: white;
+$font-roboto: 'Roboto', sans-serif;
+$river: #3498DB;
+
+/******* html body root styling *****/
+
+html {
+	font-size: 15px;
+	font-family: $font-roboto;
 }
+
+body {
+	border: 1px solid black;
+
+	.root{ //flex box main container
+		display: flex;
+		flex-direction: column;
+	}
+
+}
+
+/***** header styling only *****/
+
+.header {
+	background: $midnight-blue;
+	height: 5rem;
+
+	.company_name {
+		color: $white;
+		text-align: center;
+		font-size: 1.5rem;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		bottom: .5rem;
+		letter-spacing: .2rem;
+		left: 4rem;
+		width: 16rem;
+		font-weight: thin;
+
+		.z_in_name{
+			color: $river;
+		}
+
+	}
+
+	.quote_button {
+		color: $white;
+		background: $wet-asphalt;
+		border: 1px solid $white;
+		border-radius: .09rem;
+		float: right;
+		position: relative;
+		bottom: 4rem;
+		display: none;						
+	}	
+
+}
+
+.nav_container {
+
+	.hamburger_bar_top , .hamburger_bar_center, .hamburger_bar_bottom {	
+		background: $white;
+		height: .38rem;
+		width: 2.1rem;
+		margin-bottom: .4rem;
+		position: relative;
+		top: 1.6rem;
+		left: .8rem;
+	}
+
+}
+
+
+
+
+
