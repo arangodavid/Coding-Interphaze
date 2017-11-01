@@ -5,7 +5,8 @@ html {
   font-size: 15px; }
 
 body {
-  border: 1px solid black; }
+  margin: 0;
+  padding: 0; }
   body .root {
     display: flex;
     flex-direction: column; }
@@ -64,8 +65,7 @@ body {
 
 .section_one {
   display: flex;
-  flex-direction: column;
-  border: 1px solid red; }
+  flex-direction: column; }
   .section_one .section_one_header_container {
     text-align: left;
     padding: 1rem; }
@@ -83,5 +83,71 @@ body {
 
 .section_one_questins_header {
   font-family: "Roboto", sans-serif; }
+
+.section_two {
+  padding-bottom: 1.5rem;
+  background: #ecf0f1; }
+  .section_two .section_two_header_container {
+    text-align: center;
+    font-family: "Raleway", sans-serif; }
+  .section_two .section_two_dev_container {
+    height: 34rem;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+
+.section_two_dev {
+  border: 1px solid #bdc3c7;
+  border-radius: .6rem;
+  background: white;
+  color: #bdc3c7; }
+  .section_two_dev .section_two_dev_img_container {
+    margin: 0;
+    padding: 1rem 0 1rem 0; }
+    .section_two_dev .section_two_dev_img_container .section_two_dev_img {
+      margin: 0  auto;
+      border-radius: 50%;
+      height: 6.5rem;
+      width: 6.5rem; }
+
+.section_two_dev_david {
+  background: url("../img/david.jpg");
+  background-size: cover; }
+
+.section_two_dev_kevin {
+  background: url("../img/kevin.jpg");
+  background-size: cover; }
+
+.section_two_dev_info_container {
+  text-align: center;
+  font-family: "Roboto", sans-serif; }
+  .section_two_dev_info_container .section_two_info_icons {
+    display: flex; }
+    .section_two_dev_info_container .section_two_info_icons .section_two_info_icon {
+      border: 1px solid #ecf0f1;
+      width: 33.33%;
+      height: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .section_two_dev_info_container .section_two_info_icons .section_two_info_icon .fa {
+        font-size: 1.5rem; }
+
+.section_two_dev_info_name {
+  font-size: 1.3rem;
+  margin: 0; }
+
+.section_two_dev_info_title {
+  font-weight: bold;
+  color: #7f8c8d;
+  font-size: 1rem; }
+
+.section_two_info_icon_top {
+  border-radius: 0 0 0 .5rem; }
+
+.section_two_info_icon_bottom {
+  border-radius: 0 0 .5rem 0; }
 
 /*# sourceMappingURL=style.css.map */
