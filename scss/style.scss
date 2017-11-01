@@ -16,7 +16,6 @@ body {
 }
 /***** header styling only *****/
 .header {
-	background: $dark-blue;
 	.company_name {
 		color: white;
 		text-align: center;
@@ -34,26 +33,41 @@ body {
 			color: $green;
 		}
 	}
+
 	.quote_button {
 		color: white;
-		background: $light-blue;
+		background: $dark-blue;
 		border: 1px solid white;
 		border-radius: .09rem;
-		float: right;
 		position: relative;
-		bottom: 4rem;
-		display: none;						
+		bottom: .9rem;
+		height: 3rem;
+		font-family: $heading-font;
+		margin: 0 auto;
+		display: block;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+		cursor: pointer;
+			&:hover {
+				background: $light-blue;
+				opacity: .8;
+		}
 	}	
 }
 .nav_container {
-	.hamburger_bar_top , .hamburger_bar_center, .hamburger_bar_bottom {	
-		background: white;
-		height: .38rem;
-		width: 2.1rem;
-		margin-bottom: .4rem;
-		position: relative;
-		top: 1.6rem;
-		left: .8rem;
+	background: $dark-blue;
+	.hamburger_container{
+		cursor: pointer;
+		width: 1rem;
+		.hamburger_bar_top , .hamburger_bar_center, .hamburger_bar_bottom {	
+			background: white;
+			height: .38rem;
+			width: 2.1rem;
+			margin-bottom: .4rem;
+			position: relative;
+			top: 1.6rem;
+			left: .8rem;
+		}
 	}
 }
 .hamburger_nav_menu {
@@ -66,10 +80,40 @@ body {
 	padding: 0;
 	text-align: center;
 	color: white;
+	cursor: pointer;
 	.hamburger_nav_menu_one , .hamburger_nav_menu_two , .hamburger_nav_menu_three{
 		border-top: 1px solid white;
 		height: 3rem;
 		padding-top: 2rem;	
+	}
+}
+
+// Hero banner
+.hero_banner{
+	border: 1px solid black;
+	height: 25rem;
+	line-height: 1.5;
+	padding: 1rem;
+	.hero_banner_quality_paragraph , .hero_banner_ideas_paragraph{
+		font-family: $heading-font;
+		font-size: $medium-font * 1.5;
+		text-align: center;
+		font-weight: 100;
+	}
+	.hero_banner_ideas_paragraph{
+		font-size: $medium-font * 1.1;
+	}
+	.lets_talk_button{
+		height: 3rem;
+		width: 50%;
+		border-radius: .09rem;
+		background: $green;
+		display: block;
+		margin: 0 auto;
+		border: none;
+		color: white;
+		position: relative;
+		top: 3rem;
 	}
 }
 // Section One
