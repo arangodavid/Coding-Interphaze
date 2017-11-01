@@ -89,21 +89,21 @@ body {
 }
 
 // Hero banner
-.hero_banner{
+.hero_banner {
 	border: 1px solid black;
 	height: 25rem;
 	line-height: 1.5;
 	padding: 1rem;
-	.hero_banner_quality_paragraph , .hero_banner_ideas_paragraph{
+	.hero_banner_quality_paragraph , .hero_banner_ideas_paragraph {
 		font-family: $heading-font;
 		font-size: $medium-font * 1.5;
 		text-align: center;
 		font-weight: 100;
 	}
-	.hero_banner_ideas_paragraph{
+	.hero_banner_ideas_paragraph {
 		font-size: $medium-font * 1.1;
 	}
-	.lets_talk_button{
+	.lets_talk_button {
 		height: 3rem;
 		width: 50%;
 		border-radius: .09rem;
@@ -214,3 +214,40 @@ body {
 .section_two_info_icon_bottom {
 	border-radius: 0 0 .5rem 0;
 }
+//Section three
+.section_three {
+	display: flex;
+	flex-direction: column;
+	height: 38rem;
+	justify-content: space-around;
+	margin-top: .5rem;
+}
+
+.projects_text{
+	font-family: $heading-font;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	font-size: $large-font;
+}
+
+.portfolio_section_top , .portfolio_section_bottom {
+	height: 10.5rem;
+	background: lightgray;
+	width: 95%;
+	margin: 0 auto;
+	border-radius: .5rem;
+}
+
+.portfolio_left_right_container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	.portfolio_section_left, .portfolio_section_right{
+		height: 9.5rem;
+		background: lightgray;
+		width: 45%;
+		border-radius: .5rem;		
+	}
+}
+
