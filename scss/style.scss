@@ -2,24 +2,19 @@
 @import 'vars';
 @import url('https://fonts.googleapis.com/css?family=Raleway');//heading font realeway
 @import url('https://fonts.googleapis.com/css?family=Roboto'); // paragraph font roboto.
-
-
 /******* html body root styling *****/
-
 html {
 	font-size: 15px;
 }
-
 body {
-	border: 1px solid black;
+	margin: 0;
+	padding: 0;
 	.root{ //flex box main container
 		display: flex;
 		flex-direction: column;
 	}
 }
-
 /***** header styling only *****/
-
 .header {
 	.company_name {
 		color: white;
@@ -53,13 +48,12 @@ body {
 		padding-left: 1.5rem;
 		padding-right: 1.5rem;
 		cursor: pointer;
-		&:hover {
-			background: $light-blue;
-			opacity: .8;
+			&:hover {
+				background: $light-blue;
+				opacity: .8;
 		}
 	}	
 }
-
 .nav_container {
 	background: $dark-blue;
 	.hamburger_container{
@@ -76,7 +70,6 @@ body {
 		}
 	}
 }
-
 .hamburger_nav_menu {
 	display: none;
     list-style: none;
@@ -95,7 +88,129 @@ body {
 	}
 }
 
-
-
-
-
+// Hero banner
+.hero_banner{
+	border: 1px solid black;
+	height: 25rem;
+	line-height: 1.5;
+	padding: 1rem;
+	.hero_banner_quality_paragraph , .hero_banner_ideas_paragraph{
+		font-family: $heading-font;
+		font-size: $medium-font * 1.5;
+		text-align: center;
+		font-weight: 100;
+	}
+	.hero_banner_ideas_paragraph{
+		font-size: $medium-font * 1.1;
+	}
+	.lets_talk_button{
+		height: 3rem;
+		width: 50%;
+		border-radius: .09rem;
+		background: $green;
+		display: block;
+		margin: 0 auto;
+		border: none;
+		color: white;
+		position: relative;
+		top: 3rem;
+	}
+}
+// Section One
+.section_one {
+	display: flex;
+	flex-direction: column;
+	.section_one_header_container {
+		text-align: left;
+		padding: $medium-padding;
+	}
+	.section_one_questions {
+		line-height: $line-height;
+		padding: $medium-padding;
+	}
+}
+.section_one_header {
+	padding: $medium-padding;
+	font-size: $large-font;
+	font-family: $heading-font;
+}
+.section_one_questins_header {
+	font-family: $heading-font;
+}
+.section_one_questins_header {
+	font-family: $paragraph-font;
+}
+// Section Two
+.section_two {
+	padding-bottom: $large-padding;
+	background: $light-grey;
+	.section_two_header_container {
+		text-align: center;
+		font-family: $heading-font;
+	}
+	.section_two_dev_container {
+		height: 34rem;
+		width: 80%;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+}
+.section_two_dev {
+	border: 1px solid $medium-grey;
+	border-radius: .6rem;
+	background: white;
+	color: $medium-grey;
+	.section_two_dev_img_container{
+		margin: 0;
+		padding: $medium-padding 0 $medium-padding 0;
+		.section_two_dev_img {
+			margin: 0  auto;
+			border-radius: 50%;
+			height: 6.5rem;
+			width: 6.5rem;
+		}
+	}
+}
+.section_two_dev_david {
+	background: url('../img/david.jpg');
+	background-size: cover;
+}
+.section_two_dev_kevin {
+	background: url('../img/kevin.jpg');
+	background-size: cover;
+}
+.section_two_dev_info_container {
+	text-align: center;
+	font-family: $paragraph-font;
+	.section_two_info_icons {
+		display: flex;
+		.section_two_info_icon {
+			border: 1px solid $light-grey;
+			width: 33.33%;
+			height: 3rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			.fa {
+				font-size: $large-font;
+			}
+		}
+	}
+}
+.section_two_dev_info_name {
+	font-size: $medium-font * 1.3;
+	margin: 0;
+}
+.section_two_dev_info_title {
+	font-weight: bold;
+	color: $dark-grey;
+	font-size: $medium-font;
+}
+.section_two_info_icon_top {
+	border-radius: 0 0 0 .5rem;
+}
+.section_two_info_icon_bottom {
+	border-radius: 0 0 .5rem 0;
+}
