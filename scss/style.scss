@@ -21,7 +21,6 @@ body {
 /***** header styling only *****/
 
 .header {
-	background: $dark-blue;
 	.company_name {
 		color: white;
 		text-align: center;
@@ -39,27 +38,42 @@ body {
 			color: $green;
 		}
 	}
+
 	.quote_button {
 		color: white;
-		background: $light-blue;
+		background: $dark-blue;
 		border: 1px solid white;
 		border-radius: .09rem;
-		float: right;
 		position: relative;
-		bottom: 4rem;
-		display: none;						
+		bottom: .9rem;
+		height: 3rem;
+		font-family: $heading-font;
+		margin: 0 auto;
+		display: block;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+		cursor: pointer;
+		&:hover {
+			background: $light-blue;
+			opacity: .8;
+		}
 	}	
 }
 
 .nav_container {
-	.hamburger_bar_top , .hamburger_bar_center, .hamburger_bar_bottom {	
-		background: white;
-		height: .38rem;
-		width: 2.1rem;
-		margin-bottom: .4rem;
-		position: relative;
-		top: 1.6rem;
-		left: .8rem;
+	background: $dark-blue;
+	.hamburger_container{
+		cursor: pointer;
+		width: 1rem;
+		.hamburger_bar_top , .hamburger_bar_center, .hamburger_bar_bottom {	
+			background: white;
+			height: .38rem;
+			width: 2.1rem;
+			margin-bottom: .4rem;
+			position: relative;
+			top: 1.6rem;
+			left: .8rem;
+		}
 	}
 }
 
@@ -73,6 +87,7 @@ body {
 	padding: 0;
 	text-align: center;
 	color: white;
+	cursor: pointer;
 	.hamburger_nav_menu_one , .hamburger_nav_menu_two , .hamburger_nav_menu_three{
 		border-top: 1px solid white;
 		height: 3rem;
