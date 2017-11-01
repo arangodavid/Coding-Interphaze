@@ -2,14 +2,10 @@
 @import 'vars';
 @import url('https://fonts.googleapis.com/css?family=Raleway');//heading font realeway
 @import url('https://fonts.googleapis.com/css?family=Roboto'); // paragraph font roboto.
-
-
 /******* html body root styling *****/
-
 html {
 	font-size: 15px;
 }
-
 body {
 	border: 1px solid black;
 	.root{ //flex box main container
@@ -17,9 +13,7 @@ body {
 		flex-direction: column;
 	}
 }
-
 /***** header styling only *****/
-
 .header {
 	background: $dark-blue;
 	.company_name {
@@ -50,7 +44,6 @@ body {
 		display: none;						
 	}	
 }
-
 .nav_container {
 	.hamburger_bar_top , .hamburger_bar_center, .hamburger_bar_bottom {	
 		background: white;
@@ -62,7 +55,6 @@ body {
 		left: .8rem;
 	}
 }
-
 .hamburger_nav_menu {
 	display: none;
     list-style: none;
@@ -79,8 +71,30 @@ body {
 		padding-top: 2rem;	
 	}
 }
-
-
-
+// Section One
+.section_one {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid red;
+	.section_one_header_container {
+		text-align: left;
+		padding: $medium-padding;
+	}
+	.section_one_questions {
+		line-height: $line-height;
+		padding: $medium-padding;
+	}
+}
+.section_one_header {
+	padding: $medium-padding;
+	font-size: $large-font;
+	font-family: $heading-font;
+}
+.section_one_questins_header {
+	font-family: $heading-font;
+}
+.section_one_questins_header {
+	font-family: $paragraph-font;
+}
 
 
