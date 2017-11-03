@@ -114,6 +114,7 @@ body {
 		color: white;
 		position: relative;
 		top: 3rem;
+		cursor: pointer;
 	}
 }
 // Section One
@@ -223,7 +224,7 @@ body {
 	margin-top: .5rem;
 }
 
-.projects_text{
+.projects_text {
 	font-family: $heading-font;
 	text-align: center;
 	margin: 0;
@@ -243,11 +244,85 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	.portfolio_section_left, .portfolio_section_right{
+	.portfolio_section_left, .portfolio_section_right {
 		height: 9.5rem;
 		background: lightgray;
 		width: 45%;
 		border-radius: .5rem;		
 	}
+}
+
+//footer
+.site_footer {
+	display: flex;
+	flex-direction: column;
+	background: $dark-blue;
+	padding: $medium-padding;
+		.company_name {
+			color: white;
+			text-align: center;
+			font-size: 1.5rem;
+			letter-spacing: .2rem;
+			width: 17rem;
+			font-weight: thin;
+			font-family: $heading-font;
+			margin: 0 auto;
+
+		.company_name_z{
+			color: $green;
+		}
+	}
+}
+
+.button_back_to_top_container {
+	display: flex;
+	flex-direction: row;
+	.back_to_top{
+		height: 2.2rem;
+		width: 2.2rem;
+		display: block;
+		position: absolute;
+		right: 3.4rem;
+	}
+	.footer_button {
+		height: 2.5rem;
+		width: 40%;
+		border-radius: .09rem;
+		background: $green;
+		display: block;
+		margin-bottom: $large-margin;		
+		border: none;
+		margin: 0 auto;
+		color: white;
+		cursor: pointer;
+	}
+}
+
+.footer_ul_container {
+	list-style: none;
+	padding: 0;
+	font-family: $paragraph-font;
+	color: white;
+	font-size: $medium-font;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	.footer_ul_item_one , .footer_ul_item_two , .footer_ul_item_three {
+		display: inline-block;
+		margin-bottom: $small-margin;
+	}
+}
+
+.small_copyright_text , .small_developed_by_text {
+	color: white;
+	text-align: center;
+	font-family: $paragraph-font;
+	font-size: $small-font * 1.4;
+	margin: 2rem 0 0 0;
+}
+
+.small_developed_by_text{
+	margin: 0;
 }
 
