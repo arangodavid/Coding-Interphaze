@@ -173,10 +173,22 @@ body {
       justify-content: center;
       align-items: center; }
       .section_two_dev_info_container .section_two_info_icons .section_two_info_icon .fa {
-        font-size: 1.5rem; }
+        font-size: 1.5rem;
+        transition: .5s all;
+        cursor: pointer; }
+
+.fa-github:hover, .fa-github:active {
+  color: #000000; }
+
+.fa-linkedin:hover, .fa-linkedin:active {
+  color: #0077B5; }
+
+.fa-user-o:hover, .fa-user-o:active {
+  color: #32CD32; }
 
 .section_two_dev_info_name {
   font-size: 1.3rem;
+  color: #2980b9;
   margin: 0; }
 
 .section_two_dev_info_title {

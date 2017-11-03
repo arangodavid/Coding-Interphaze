@@ -199,12 +199,35 @@ body {
 			align-items: center;
 			.fa {
 				font-size: $large-font;
+				transition: .5s all;
+				cursor: pointer;
 			}
 		}
 	}
 }
+
+.fa-github {
+	&:hover , &:active {
+		color: $black;
+	}	
+}
+
+.fa-linkedin {
+	&:hover, &:active {
+		color: $linkedin-blue;
+	}	
+}
+
+.fa-user-o {
+	&:hover, &:active {
+		color: $green;
+	}
+}
+
+
 .section_two_dev_info_name {
 	font-size: $medium-font * 1.3;
+	color: $dark-blue;
 	margin: 0;
 }
 .section_two_dev_info_title {
