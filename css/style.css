@@ -76,10 +76,13 @@ body {
     padding-top: 2rem; }
 
 .hero_banner {
-  border: 1px solid black;
+  background: red;
   height: 25rem;
   line-height: 1.5;
-  padding: 1rem; }
+  padding: 1rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../testThree.jpg");
+  background-size: cover;
+  color: white; }
   .hero_banner .hero_banner_quality_paragraph, .hero_banner .hero_banner_ideas_paragraph {
     font-family: "Raleway", sans-serif;
     font-size: 1.5rem;
@@ -203,7 +206,7 @@ body {
 
 .portfolio_section_top, .portfolio_section_bottom {
   height: 10.5rem;
-  background: lightgray;
+  background: #ecf0f1;
   width: 95%;
   margin: 0 auto;
   border-radius: .5rem; }
@@ -214,7 +217,7 @@ body {
   justify-content: space-around; }
   .portfolio_left_right_container .portfolio_section_left, .portfolio_left_right_container .portfolio_section_right {
     height: 9.5rem;
-    background: lightgray;
+    background: #ecf0f1;
     width: 45%;
     border-radius: .5rem; }
 
