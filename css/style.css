@@ -97,7 +97,8 @@ body {
     border: none;
     color: white;
     position: relative;
-    top: 3rem; }
+    top: 3rem;
+    cursor: pointer; }
 
 .section_one {
   display: flex;
@@ -216,5 +217,67 @@ body {
     background: lightgray;
     width: 45%;
     border-radius: .5rem; }
+
+.site_footer {
+  display: flex;
+  flex-direction: column;
+  background: #2980b9;
+  padding: 1rem; }
+  .site_footer .company_name {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
+    width: 17rem;
+    font-weight: thin;
+    font-family: "Raleway", sans-serif;
+    margin: 0 auto; }
+    .site_footer .company_name .company_name_z {
+      color: #32CD32; }
+
+.button_back_to_top_container {
+  display: flex;
+  flex-direction: row; }
+  .button_back_to_top_container .back_to_top {
+    height: 2.2rem;
+    width: 2.2rem;
+    display: block;
+    position: absolute;
+    right: 3.4rem; }
+  .button_back_to_top_container .footer_button {
+    height: 2.5rem;
+    width: 40%;
+    border-radius: .09rem;
+    background: #32CD32;
+    display: block;
+    margin-bottom: 1.5rem;
+    border: none;
+    margin: 0 auto;
+    color: white;
+    cursor: pointer; }
+
+.footer_ul_container {
+  list-style: none;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+  .footer_ul_container .footer_ul_item_one, .footer_ul_container .footer_ul_item_two, .footer_ul_container .footer_ul_item_three {
+    display: inline-block;
+    margin-bottom: 0.5rem; }
+
+.small_copyright_text, .small_developed_by_text {
+  color: white;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.7rem;
+  margin: 2rem 0 0 0; }
+
+.small_developed_by_text {
+  margin: 0; }
 
 /*# sourceMappingURL=style.css.map */
