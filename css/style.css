@@ -105,24 +105,34 @@ body {
 
 .section_one {
   display: flex;
-  flex-direction: column; }
-  .section_one .section_one_header_container {
-    text-align: left;
-    padding: 1rem; }
-  .section_one .section_one_questions {
-    line-height: 1.5;
-    padding: 1rem; }
+  flex-direction: column;
+  height: 38rem;
+  justify-content: space-around;
+  margin-top: .5rem; }
 
-.section_one_header {
-  padding: 1rem;
-  font-size: 1.5rem;
-  font-family: "Raleway", sans-serif; }
+.projects_text {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem; }
 
-.section_one_questins_header {
-  font-family: "Raleway", sans-serif; }
+.portfolio_section_top, .portfolio_section_bottom {
+  height: 10.5rem;
+  background: #ecf0f1;
+  width: 95%;
+  margin: 0 auto;
+  border-radius: .5rem; }
 
-.section_one_questins_header {
-  font-family: "Roboto", sans-serif; }
+.portfolio_left_right_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+  .portfolio_left_right_container .portfolio_section_left, .portfolio_left_right_container .portfolio_section_right {
+    height: 9.5rem;
+    background: #ecf0f1;
+    width: 45%;
+    border-radius: .5rem; }
 
 .section_two {
   padding-bottom: 1.5rem;
@@ -204,34 +214,24 @@ body {
 
 .section_three {
   display: flex;
-  flex-direction: column;
-  height: 38rem;
-  justify-content: space-around;
-  margin-top: .5rem; }
+  flex-direction: column; }
+  .section_three .section_three_header_container {
+    text-align: left;
+    padding: 1rem; }
+  .section_three .section_three_questions {
+    line-height: 1.5;
+    padding: 1rem; }
 
-.projects_text {
-  font-family: "Raleway", sans-serif;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  font-size: 1.5rem; }
+.section_three_header {
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-family: "Raleway", sans-serif; }
 
-.portfolio_section_top, .portfolio_section_bottom {
-  height: 10.5rem;
-  background: #ecf0f1;
-  width: 95%;
-  margin: 0 auto;
-  border-radius: .5rem; }
+.section_three_questions_header {
+  font-family: "Raleway", sans-serif; }
 
-.portfolio_left_right_container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around; }
-  .portfolio_left_right_container .portfolio_section_left, .portfolio_left_right_container .portfolio_section_right {
-    height: 9.5rem;
-    background: #ecf0f1;
-    width: 45%;
-    border-radius: .5rem; }
+.section_three_questions_header {
+  font-family: "Roboto", sans-serif; }
 
 .site_footer {
   display: flex;
