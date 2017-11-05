@@ -124,25 +124,37 @@ body {
 .section_one {
 	display: flex;
 	flex-direction: column;
-	.section_one_header_container {
-		text-align: left;
-		padding: $medium-padding;
-	}
-	.section_one_questions {
-		line-height: $line-height;
-		padding: $medium-padding;
-	}
+	height: 38rem;
+	justify-content: space-around;
+	margin-top: .5rem;
 }
-.section_one_header {
-	padding: $medium-padding;
+
+.projects_text {
+	font-family: $heading-font;
+	text-align: center;
+	margin: 0;
+	padding: 0;
 	font-size: $large-font;
-	font-family: $heading-font;
 }
-.section_one_questins_header {
-	font-family: $heading-font;
+
+.portfolio_section_top , .portfolio_section_bottom {
+	height: 10.5rem;
+	background: $light-grey;
+	width: 95%;
+	margin: 0 auto;
+	border-radius: .5rem;
 }
-.section_one_questins_header {
-	font-family: $paragraph-font;
+
+.portfolio_left_right_container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	.portfolio_section_left, .portfolio_section_right {
+		height: 9.5rem;
+		background: $light-grey;
+		width: 45%;
+		border-radius: .5rem;		
+	}
 }
 // Section Two
 .section_two {
@@ -245,39 +257,26 @@ body {
 .section_three {
 	display: flex;
 	flex-direction: column;
-	height: 38rem;
-	justify-content: space-around;
-	margin-top: .5rem;
-}
-
-.projects_text {
-	font-family: $heading-font;
-	text-align: center;
-	margin: 0;
-	padding: 0;
-	font-size: $large-font;
-}
-
-.portfolio_section_top , .portfolio_section_bottom {
-	height: 10.5rem;
-	background: $light-grey;
-	width: 95%;
-	margin: 0 auto;
-	border-radius: .5rem;
-}
-
-.portfolio_left_right_container {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	.portfolio_section_left, .portfolio_section_right {
-		height: 9.5rem;
-		background: $light-grey;
-		width: 45%;
-		border-radius: .5rem;		
+	.section_three_header_container {
+		text-align: left;
+		padding: $medium-padding;
+	}
+	.section_three_questions {
+		line-height: $line-height;
+		padding: $medium-padding;
 	}
 }
-
+.section_three_header {
+	padding: $medium-padding;
+	font-size: $large-font;
+	font-family: $heading-font;
+}
+.section_three_questions_header {
+	font-family: $heading-font;
+}
+.section_three_questions_header {
+	font-family: $paragraph-font;
+}
 //footer
 .site_footer {
 	display: flex;
