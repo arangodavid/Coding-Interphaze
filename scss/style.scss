@@ -124,11 +124,10 @@ body {
 .section_one {
 	display: flex;
 	flex-direction: column;
-	height: 38rem;
+	height: 64rem;
 	justify-content: space-around;
-	margin-top: .5rem;
+	padding: 0 0 $large-padding 0;
 }
-
 .projects_text {
 	font-family: $heading-font;
 	text-align: center;
@@ -136,25 +135,42 @@ body {
 	padding: 0;
 	font-size: $large-font;
 }
-
-.portfolio_section_top , .portfolio_section_bottom {
-	height: 10.5rem;
-	background: $light-grey;
+.portfolio_section_top, .portfolio_section_bottom {
+  box-shadow: inset 0 0 2rem $black;
+	height: 11rem;
 	width: 95%;
 	margin: 0 auto;
-	border-radius: .5rem;
+	border-radius: $small-radius;
 }
-
+.portfolio_section_top {
+	background: url('../img/davidProjectOne.jpg') no-repeat;
+	background-size: cover;
+}
+.portfolio_section_bottom {
+	background: url("../img/kevinProjectOne.jpg") no-repeat;
+	background-size: cover;
+}
 .portfolio_left_right_container {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 33rem;
 	.portfolio_section_left, .portfolio_section_right {
-		height: 9.5rem;
-		background: $light-grey;
-		width: 45%;
-		border-radius: .5rem;		
+		box-shadow: inset 0 0 2rem $black;
+		width: 95%;
+		margin: 0 auto;
+		border-radius: $small-radius;		
 	}
+	.portfolio_section_left {
+		background: url('../img/davidProjectTwo.jpg') no-repeat bottom, url('../img/davidProjectFour.jpg') no-repeat top;
+		background-size: contain, contain;
+		height: 19rem;
+	}
+}
+.portfolio_section_right {
+	background: url('../img/kevinProjectTwo.jpg');
+	background-size: cover;
+	height: 11rem;
 }
 // Section Two
 .section_two {
