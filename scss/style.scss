@@ -134,7 +134,8 @@ body {
   	font-family: $paragraph-font;
   	font-weight: thin;
   	height: 21rem;
-  	width: 100%;
+  	width: 95%;
+  	padding: .65rem;
 }
 .cont1 {
 	display: flex;
@@ -155,11 +156,12 @@ body {
 	background: url("../img/websiteex.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
+	transform: translate(-5%, 0);
 	&:hover::before {
 		content: "";
 		display: block;
-		height: 49.65%;
-		width: 35%;
+		height: 100%;
+		width: 100%;
 		background: black;
 		opacity: .5;
 		position: absolute;
@@ -168,16 +170,17 @@ body {
 }
 
 .top_project {
-	width: 64%;
+	width: 65%;
 	height: 100%;
 	background: url("../img/davidProjectWay.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
+	transform: translate(.5%, -2.5%);
 	&:hover::before {
 		content: "";
 		display: block;
-		height: 25%;
-		width: 65%;
+		height: 100%;
+		width: 100%;
 		background: black;
 		opacity: .5;
 		position: absolute;
@@ -191,11 +194,12 @@ body {
 	background: url("../img/kevinProjectTwo.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
+	transform: translate(0, 2.5%);
 	&:hover::before {
 		content: "";
 		display: block;
-		height: 24.9%;
-		width: 32.6%;
+		height: 100%;
+		width: 100%;
 		background: black;
 		opacity: .5;
 		position: absolute;
@@ -209,11 +213,14 @@ body {
 	background: url("../img/yelpOne.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
+	overflow: hidden;
+	transform: translate(2%, 2.5%);
 	&:hover::before {
+		border: 1px solid red;
 		content: "";
 		display: block;
-		height: 24.9%;
-		width: 32.6%;
+		height: 100%;
+		width: 100%;
 		background: black;
 		opacity: .5;
 		position: absolute;
