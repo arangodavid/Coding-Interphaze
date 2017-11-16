@@ -410,6 +410,14 @@ body {
 
   .section_two_dev {
     width: 45%;
-    height: max-content; } }
+    height: max-content; }
+
+  .section_three {
+    flex-flow: row wrap;
+    justify-content: space-around; }
+    .section_three .section_three_header_container {
+      width: 100%; }
+    .section_three .section_three_questions {
+      width: 40%; } }
 
 /*# sourceMappingURL=style.css.map */
