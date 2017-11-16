@@ -384,4 +384,19 @@ body {
 .small_developed_by_text {
   margin: 0; }
 
+@media only screen and (min-width: 700px) {
+  .hero_banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .hero_banner .hero_banner_quality_paragraph {
+      margin: 0;
+      width: 70%; }
+    .hero_banner .hero_banner_ideas_paragraph {
+      margin: 0;
+      width: 40%; }
+    .hero_banner .lets_talk_button {
+      width: 20%; } }
+
 /*# sourceMappingURL=style.css.map */
