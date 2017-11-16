@@ -397,6 +397,19 @@ body {
       margin: 0;
       width: 40%; }
     .hero_banner .lets_talk_button {
-      width: 20%; } }
+      width: 20%; }
+
+  .section_two {
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .section_two .section_two_dev_container {
+      flex-direction: row;
+      height: max-content; }
+
+  .section_two_dev {
+    width: 45%;
+    height: max-content; } }
 
 /*# sourceMappingURL=style.css.map */
