@@ -454,4 +454,22 @@ body {
 		}
 
 	}
+	// Section Two
+	.section_two {
+		height: 30rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		.section_two_header_container {
+		
+		}
+		.section_two_dev_container {
+		 flex-direction: row;
+		 height: max-content;
+		}
+	}
+	.section_two_dev {
+		width: 45%;
+		height: max-content;
+	}
 }
