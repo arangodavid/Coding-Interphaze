@@ -434,6 +434,13 @@ body {
 .small_developed_by_text{
 	margin: 0;
 }
+@media only screen and (min-width: 600px) {
+	// Section Two
+	.section_two_dev {
+		width: 60%;
+		margin: 0 auto;
+	}
+}
 @media only screen and (min-width: 700px) {
 	// Header
 	.hero_banner {
