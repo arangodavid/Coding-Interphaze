@@ -387,7 +387,15 @@ body {
 @media only screen and (min-width: 600px) {
   .section_two_dev {
     width: 60%;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+
+  .section_three {
+    flex-flow: row wrap;
+    justify-content: space-around; }
+    .section_three .section_three_header_container {
+      width: 100%; }
+    .section_three .section_three_questions {
+      width: 40%; } }
 @media only screen and (min-width: 700px) {
   .hero_banner {
     display: flex;
@@ -414,14 +422,6 @@ body {
 
   .section_two_dev {
     width: 45%;
-    height: max-content; }
-
-  .section_three {
-    flex-flow: row wrap;
-    justify-content: space-around; }
-    .section_three .section_three_header_container {
-      width: 100%; }
-    .section_three .section_three_questions {
-      width: 40%; } }
+    height: max-content; } }
 
 /*# sourceMappingURL=style.css.map */

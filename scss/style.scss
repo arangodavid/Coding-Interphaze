@@ -440,6 +440,17 @@ body {
 		width: 60%;
 		margin: 0 auto;
 	}
+	// Section Three
+	.section_three {
+		flex-flow: row wrap;
+		justify-content: space-around;
+			.section_three_header_container {
+				width: 100%;
+		}
+		.section_three_questions {
+			width: 40%;
+		}
+	}
 }
 @media only screen and (min-width: 700px) {
 	// Header
@@ -478,16 +489,5 @@ body {
 	.section_two_dev {
 		width: 45%;
 		height: max-content;
-	}
-	// Section Three
-	.section_three {
-		flex-flow: row wrap;
-		justify-content: space-around;
-			.section_three_header_container {
-				width: 100%;
-		}
-		.section_three_questions {
-			width: 40%;
-		}
 	}
 }
